@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("/itis3135/images/cafe-home.jpg");
+    background-repeat: no-repeat;
+    color: #F1EBE4;
+}
+#container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+.navbar-top {
+    background-color: #3d0312;
+    overflow: hidden;
+
+}
+.navbar-top a {
+    float: right;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+.navbar-top a.logo {
+    /*Place on the left side*/
+    float: left;
+}
+
+/*when hovering over links, link should turn colors with an animation.*/
+.navbar-top a:hover {
+    background-color: #2e0606;
+    color: #ffe2c2;
+    transition: 0.3s;
+}
+
+.navbar-top a.current {
+    color: #FFCC99;
+}
+
+header {
+    /*make big*/
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*this class is called cafe-quote. It should be big.*/
+.cafe-quote {  
+    font-size: 3em;
+    text-align: center;
+}
+
+/*footer should stay at bottom. Allign links next to copyright*/
+footer {
+    background-color: #3d0312;
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /*make a little transparent*/
+    opacity: 0.8;
+}
+footer a {
+    color: #F1EBE4;
+    text-decoration: none;
+    font-size: 15px;
+}
