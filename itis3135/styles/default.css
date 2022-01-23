@@ -1,72 +1,167 @@
-html, body {
-    margin: 0;
-    overflow: hidden;
-    background-image: url("/itis3135/images/cafe-home.jpg");
-    background-repeat: no-repeat;
-    color: #F1EBE4;
+html,
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #fde5cc;
 }
+#home-page {
+  background-image: url("/itis3135/images/cafe-home.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#itis {
+  font-size: 15px;
+  text-align: justify;
+  padding: 3px;
+  color: #fde5cc;
+}
+
+#about-page {
+  overflow: auto;
+  background-color: #fde5cc;
+  justify-content: left;
+}
+
+#contract-page {
+  overflow: hidden;
+  background-color: #fde5cc;
+  font-size: 15px;
+  text-align: justify;
+  padding: 3px;
+  color: #2e0606;
+}
+
 #container {
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 #content-wrap {
-    padding-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
-.navbar-top {
-    background-color: #3d0312;
-    overflow: hidden;
 
+.navbar-top {
+  background-color: #5c0b21;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
 }
 .navbar-top a {
-    float: right;
-    
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    color: white;
+  float: right;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #f3dfc8;
 }
 .navbar-top a.logo {
-    /*Place on the left side*/
-    float: left;
+  float: left;
 }
 
-/*when hovering over links, link should turn colors with an animation.*/
+/*when hovering over links, links turn colors with an animation.*/
 .navbar-top a:hover {
-    background-color: #2e0606;
-    color: #ffe2c2;
-    transition: 0.3s;
+  background-color: #2e0606;
+  color: #ffcc99;
+  transition: 0.3s;
 }
 
 .navbar-top a.current {
-    color: #FFCC99;
+  color: #ffcc99;
 }
 
 header {
-    /*make big*/
-    font-size: 1.2em;
-    text-align: center;
+  font-size: 1.2em;
+  text-align: center;
 }
 
-/*this class is called cafe-quote. It should be big.*/
-.cafe-quote {  
-    font-size: 3em;
-    text-align: center;
+.cafe-quote {
+  font-size: 2.8em;
+  text-align: left;
+  padding-right: 10rem;
+  font-style: italic;
 }
 
-/*footer should stay at bottom. Allign links next to copyright*/
+.navbar-bottom {
+  background-color: #3d0312;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: #fde5cc;
+}
+.navbar-bottom a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #fde5cc;
+  float: inline-end;
+}
+.navbar-bottom-intro {
+  background-color: #3d0312;
+  overflow: hidden;
+  bottom: 0;
+  position: sticky;
+  width: 100%;
+  color: #fde5cc;
+}
+
+.jaylon {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+figcaption {
+  font-size: 1.2em;
+  text-align: left;
+  padding-right: 10rem;
+  font-style: italic;
+  color: #4e1a1a;
+}
+.quote {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 10rem;
+  font-style: italic;
+  color: #4e1a1a;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+  color: #4e1a1a;
+}
+.content p {
+  font-size: 1.2em;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.content h3 {
+  font-size: 1.5em;
+  text-align: left;
+  padding: 3px;
+}
+.italic {
+  font-style: italic;
+}
 footer {
-    background-color: #3d0312;
-    position: absolute;
-    padding: 1rem;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    /*make a little transparent*/
-    opacity: 0.8;
+  background-color: #3d0312;
+  overflow: hidden;
+  bottom: 0;
+  color: #fde5cc;
 }
+
 footer a {
-    color: #F1EBE4;
-    text-decoration: none;
-    font-size: 15px;
+  color: #f1ebe4;
+  text-decoration: none;
+  font-size: 15px;
 }

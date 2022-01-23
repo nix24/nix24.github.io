@@ -1,0 +1,39 @@
+html {
+    background-color: #f1ebe4;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 100%;
+    color: #6b0f28;
+}
+header {
+  background-color: #6b0f28;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  color: #f1ebe4;
+  text-align: center;
+  border-style: groove;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+}
+main a {
+    text-decoration: none;
+    color: #A7988B;
+}
+
+footer {
+    position: relative;
+    min-height: auto;
+    background-color: #6b0f28;
+    color: #f1ebe4;
+    text-align: center;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
