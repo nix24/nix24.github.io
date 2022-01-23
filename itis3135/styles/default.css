@@ -30,7 +30,6 @@ body {
   background-color: #fde5cc;
   font-size: 15px;
   text-align: justify;
-  padding: 3px;
   color: #2e0606;
 }
 
@@ -113,16 +112,13 @@ header {
 
 .jaylon {
   width: 50%;
-  height: auto;
-  margin: 0 auto;
-  top: -50px;
-  left: 0;
-  right: 0;
+  height: 1%;
+  margin-left: 300px;
+ 
 }
 figcaption {
   font-size: 1.2em;
-  text-align: left;
-  padding-right: 10rem;
+  text-align: center;
   font-style: italic;
   color: #4e1a1a;
 }
@@ -143,8 +139,9 @@ figcaption {
 .content p {
   font-size: 1.2em;
   text-align: justify;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
+
 .content h3 {
   font-size: 1.5em;
   text-align: left;
@@ -152,6 +149,9 @@ figcaption {
 }
 .italic {
   font-style: italic;
+}
+.bold{
+  font-weight: bold;
 }
 footer {
   background-color: #3d0312;
