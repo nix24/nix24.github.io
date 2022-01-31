@@ -1,2 +1,2 @@
 # nix24.github.io
- My Github pages
+ Files for course webpages and personal portfolio
