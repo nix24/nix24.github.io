@@ -1,99 +1,134 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*use profesional fonts*/
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow-y: auto;
+}
+html, body {
+  font-family: "Roboto", sans-serif;
+  color: #ecf7f7;
+
 }
 
+
+
 .container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 a {
-    text-decoration: none;
-    color: #ECF7F7;
-    font-weight: 500;
+  text-decoration: none;
+  color: #ecf7f7;
+  font-weight: 500;
 }
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: #1b155c;
-    padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #1b155c;
+  padding: 16px;
 }
 
 .logo-border {
-    border: #ECF7F7 solid 3px;
-    padding: 5px;
-    border-radius: 30px;
+  border: #ecf7f7 solid 2px;
+  padding: 5px;
+  border-radius: 30px;
 }
 #logo {
-    
-    color:#ECF7F7;
-    font-size: 20px;
-    font-weight: italic;
-    letter-spacing: 5px;
+ padding: 5px;
 }
-#logo:hover {
-    color: #8264A5;
-    transition: all 0.35s;
+.logo-border:hover {
+  /*change the color of the border when hovered over*/
+  border: #8264a5 solid 2px;
+  transition: all 0.35s;
 }
 .menu {
-    display: flex;
-    flex: 1 1 0%;
-    justify-content: flex-end;
-    margin: 0 -16px;
+  display: flex;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
 }
 .menu a {
-    margin: 0 16px;
-    transition: 0.35s;
-    padding: 10px 20px;
-    border-radius: 10px;
+  margin: 0 16px;
+  transition: 0.35s;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.menu a.current, .menu a:hover {
-    background-color: #8264A5;
-}
-
-.content {
-    color: #1d1d4b;
-    background-color: #cfc8d3;
-    min-height: 100vh;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+.menu a.current,
+.menu a:hover {
+  background-color: #8264a5;
 }
 
 footer {
-    background-color: #1b155c;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+  flex: 0 0 50px;
+  margin-top: auto;
+  background-color: #1b155c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .flex-row {
-    margin-bottom: 20px;
-    list-style: none;
-    justify-content: center;
+  margin-bottom: 20px;
+  list-style: none;
+  justify-content: center;
 }
 .flex-row li {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
-
 .copyright {
-    text-align: center;
-    color: #ECF7F7;
+  text-align: center;
+}
+
+.about {
+  background-color: #1b155c;
+  /*center text*/
+  text-align: justify;
+
+  /*padding*/
+  padding: 20px;
+}
+
+/*intro class will be a backgeoud url with icon and h1 in middle*/
+.intro {
+  background-image: url(/carringtoncaringcorp.com/images/tech-headphones.jpg);
+  font-size: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*make margin so intro is right below navbar*/
+  margin-top: 95px;
+}
+
+/*using flexbox, put each point into seperate column*/
+.info-columns {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
