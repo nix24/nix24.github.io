@@ -4,7 +4,8 @@ body {
   position: relative;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  color: #fde5cc;
+  background-color: #fde5cc;
+  color: #3d0312;
 }
 #home-page {
   background-image: url("../images/cafe-home.jpg");
@@ -22,16 +23,13 @@ body {
 
 #about-page {
   overflow: auto;
-  background-color: #fde5cc;
   justify-content: left;
 }
 
 #contract-page {
   overflow: hidden;
-  background-color: #fde5cc;
   font-size: 15px;
   text-align: justify;
-  color: #2e0606;
 }
 
 #container {
@@ -48,7 +46,6 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
-  
 }
 .section-1 input {
   border: none;
@@ -69,11 +66,9 @@ select:hover {
 
 .form-container {
   text-align: center;
-  color:#2e0606;
   padding-left: 3rem;
   padding-right: 3rem;
 }
-
 
 .navbar-top {
   background-color: #5c0b21;
@@ -148,7 +143,6 @@ header {
   width: 50%;
   height: 1%;
   margin-left: 300px;
- 
 }
 figcaption {
   font-size: 1.2em;
@@ -184,7 +178,7 @@ figcaption {
 .italic {
   font-style: italic;
 }
-.bold{
+.bold {
   font-weight: bold;
 }
 footer {
@@ -207,11 +201,10 @@ footer a {
   text-align: center;
   list-style: inside;
   color: #4e1a1a;
-
 }
-#table-style{
+#table-style {
   border-collapse: collapse;
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
   box-shadow: 0px 0px 10px rgb(247, 214, 214);
 }
 #table-style thead tr {
@@ -222,8 +215,71 @@ footer a {
 #table-style th td {
   padding: 10px 20px;
 }
-#table-style tbody tr {border-bottom: 1px solid #3d0312;}
-#table-style tbody tr:nth-child(even) {background-color: #e6d4c1;}
-#table-style tbody tr:last-of-type {border-bottom: 2px solid #3d0312;}
+#table-style tbody tr {
+  border-bottom: 1px solid #3d0312;
+}
+#table-style tbody tr:nth-child(even) {
+  background-color: #e6d4c1;
+}
+#table-style tbody tr:last-of-type {
+  border-bottom: 2px solid #3d0312;
+}
 
+.header {
+    text-align: center;
+  border: #2e0606 solid 1px;
+  background-color: #5c0b21;
+  color: #fde5cc;
+  padding: 10px;
+  margin-right: 10em;
+  margin-left: 10em;
+  border-radius: 10px;
+}
 
+/*eval container will have text explaining C.R.A.P with a ul list. List should be centered hiding the bullet list but underlining lis*/
+.eval-container {
+  font-size: 20px;
+
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.eval-container ul {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.eval-container span {
+  font-size: x-large;
+  font-style: bold;
+}
+
+.eval-container img {
+  width: 95%;
+  height: 75%;
+  padding-bottom: 10px;
+}
+
+.website-compare {
+  /*use css grid to line items side by side with respective text centerd*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.website-compare a {
+  text-decoration: none;
+  display: block;
+  margin-top: auto;
+}
+/*on hover*/
+.website-compare a:hover {
+  background-color: #2e0606;
+  color: #ffcc99;
+  transition: 0.3s;
+}

@@ -10,7 +10,8 @@ body {
 }
 html, body {
   font-family: "Roboto", sans-serif;
-  color: #ecf7f7;
+  color: #eddef1;
+  background-color: #deebf7;
 
 }
 
@@ -105,14 +106,15 @@ footer {
   padding: 20px;
 }
 
-/*intro class will be a backgeoud url with icon and h1 in middle*/
+/*intro class will be a backgeoud url of from image file*/
 .intro {
-  background-image: url(/carringtoncaringcorp.com/images/tech-headphones.jpg);
+  background-image: url(/images/tech-headphones.jpg);
   font-size: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 80vh;
+
   
 
 
@@ -132,3 +134,45 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.about-header {
+  margin-top: 100px;
+  color: #1b155c;
+  padding: 50px;
+  
+}
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.about-header p {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.block {
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #1b155c;
+  color: #ecf7f7;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #452d6d;
+}
+
