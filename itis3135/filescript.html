@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jaylon Carrington | ITIS 3135 | Jazzamoon Cats Introduction</title>
+    <link href="styles/default.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar-top">
+        <a href="index.html">Home</a>
+        <a href="contract.html">Contract</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="tables.html">Tables</a>
+        <a href="form.html">Form</a>
+        <a href="evaluator.html">Evaluator</a>
+        <a class="current" href="filescript.html">javascript</a>
+        <h3 id="itis">Jaylon Carrington ITIS 3135</h3>
+      </nav>
+    </header>
+    <main class="filescript">
+      <!--page Displays the time, day of week, and date (i.e. Today is 3:53pm on Wednesday, 3 November, 2027) as an h3 under the page name in the main element -->
+      <h3 style="text-align: center" id="currentDate"></h3>
+      <!--user will enter their name and how they are feeling into a text field.(ONLY html)-->
+      <div class="filescript-form">
+        <label for="name">Hey stranger what's your name?:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="feeling">How are you feeling today?</label>
+        <input
+          type="text"
+          name="feeling"
+          id="feeling"
+          placeholder="Enter your feeling"
+          required
+        />
+        <button id="submit">submit</button>
+      </div>
+
+      <h4 style="text-align: center" id="display"></h4>
+
+      <h2 style="text-align: center">Button mini-games!</h2>
+      <!--a flex grid style div full of five butons.-->
+      <div class="filescript-buttons">
+        <button class="fs-button" id="button1">Button 1</button>
+        <button class="fs-button" id="button2">Button 2</button>
+        <button class="fs-button" id="button3">Button 3</button>
+        <button class="fs-button" id="button4">Button 4</button>
+        <button class="fs-button" id="button5">Button 5</button>
+      </div>
+      <h3 id="buttonDisplay"></h3>
+      <h3 id="rps"></h3>
+      <h3 id="timer"></h3>
+      <div class="reaction-game">
+        <button class="reaction-button" id="reaction1"></button>
+        <button class="reaction-button" id="reaction2"></button>
+        <button class="reaction-button" id="reaction3"></button>
+      </div>
+      <h3 style="margin: auto; text-align: center;">Thank you for viewing our silly little games haha</h3>
+    </main>
+    <footer>
+      <nav class="navbar-bottom">
+        <p class="copyright">
+          <a href="carringtoncaringcorp.com/index.html">
+            Designed by Carrington's Caring Corp. &copy;2022.</a
+          >
+        </p>
+        <p>
+          <a href="https://validator.w3.org/check?uri=referer">
+            <img
+              src="images/button_validation_html5.png"
+              width="88"
+              height="31"
+              alt="Link to HTML validator"
+            />
+          </a>
+          |
+          <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              style="border: 0; width: 88px; height: 31px"
+              src="https://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!"
+            />
+          </a>
+        </p>
+
+        <a href="https://www.freecodecamp.org/jj_phoenix">FreeCodeCamp</a>
+        |
+        <a href="https://github.com/nix24">Github</a>
+        |
+        <a href="https://nix24.github.io/">Github.io</a>
+        |
+        <a href="https://www.codecademy.com/profiles/JaylonC">CodeAcademy</a>
+        |
+        <a href="https://www.linkedin.com/in/jaylon-carrington-07b924211/"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://jsfiddle.net/user/JayJ/fiddles/">JSFiddle</a>
+        |
+        <a href="https://webpages.charlotte.edu/jcarrin4/">Charlotte.edu</a>
+        |
+      </nav>
+    </footer>
+    <script src="scripts/defaultscripts.js"></script>
+  </body>
+</html>

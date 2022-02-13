@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*use profesional fonts*/
   font-family: 'Roboto', sans-serif;
 }
 body {
@@ -106,9 +105,8 @@ footer {
   padding: 20px;
 }
 
-/*intro class will be a backgeoud url of from image file*/
 .intro {
-  background-image: url(/images/tech-headphones.jpg);
+  background-image: url("../images/tech-headphones.jpg");
   font-size: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,11 +120,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*make margin so intro is right below navbar*/
   margin-top: 95px;
 }
 
-/*using flexbox, put each point into seperate column*/
 .info-columns {
   color: #000000;
   display: flex;
