@@ -1,8 +1,8 @@
-html,
+
 body {
   margin: 0;
   position: relative;
-  height: 100%;
+  min-height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #fde5cc;
   color: #3d0312;
@@ -37,7 +37,8 @@ body {
   min-height: 100vh;
 }
 #content-wrap {
-  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .section-1 {
@@ -70,7 +71,7 @@ select:hover {
   padding-right: 3rem;
 }
 
-.navbar-top {
+/* .navbar-top {
   background-color: #5c0b21;
   overflow: hidden;
   top: 0;
@@ -80,7 +81,6 @@ select:hover {
 }
 .navbar-top a {
   float: right;
-
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -89,6 +89,29 @@ select:hover {
 }
 .navbar-top a.logo {
   float: left;
+} */
+
+.btn {
+  background-color: #5c0b21;
+  color: #f3dfc8;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2e0606;
+  color: #f3dfc8;
+  transition: 0.3s;
+}
+
+.dropdown-item {
+  color: #f3dfc8;
+}
+.dropdown-item:hover {
+  background-color: #2e0606;
+  color: #ffcc99;
+  transition: 0.3s;
 }
 
 /*when hovering over links, links turn colors with an animation.*/
@@ -113,14 +136,15 @@ header {
   padding-right: 10rem;
   font-style: italic;
   color: #fde5cc;
+  
 }
 
 .navbar-bottom {
+  /*place at bottom of screen*/
+  width: 100%;
   background-color: #3d0312;
   overflow: hidden;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+  z-index: 1;
   color: #fde5cc;
 }
 .navbar-bottom a {
@@ -140,11 +164,7 @@ header {
   color: #fde5cc;
 }
 
-.jaylon {
-  width: 50%;
-  height: 1%;
-  margin-left: 300px;
-}
+
 figcaption {
   font-size: 1.2em;
   text-align: center;
@@ -187,7 +207,6 @@ footer {
   overflow: hidden;
   bottom: 0;
   color: #fde5cc;
-  margin-top: -1rem;
 }
 
 footer a {
