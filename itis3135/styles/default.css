@@ -1,7 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
   position: relative;
-  min-height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #fde5cc;
   color: #3d0312;
@@ -67,26 +67,6 @@ select:hover {
   padding: 1rem;
 }
 
-/* .navbar-top {
-  background-color: #5c0b21;
-  overflow: hidden;
-  top: 0;
-  position: sticky;
-  width: 100%;
-  z-index: 1;
-}
-.navbar-top a {
-  float: right;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  color: #f3dfc8;
-}
-.navbar-top a.logo {
-  float: left;
-} */
-
 .btn {
   background-color: #5c0b21;
   color: #f3dfc8;
@@ -121,10 +101,6 @@ select:hover {
   color: #ffcc99;
 }
 
-header {
-  font-size: 1.2em;
-  text-align: center;
-}
 
 .cafe-quote {
   font-size: 2.8em;
@@ -391,4 +367,26 @@ a:hover {
   background-color: #2e0606;
   color: #ffcc99;
   transition: 0.5s;
+}
+
+.array-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: #2e0606 solid 1px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  background-color: #f1ebe4;
+}
+.array-buttons button {
+  border-radius: 20px;
+  border: #2e0606;
+}
+#array-table {
+  margin: auto;
+  width: 50%;
+  
 }
