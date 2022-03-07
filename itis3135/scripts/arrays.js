@@ -36,6 +36,7 @@ addSalary.addEventListener("click", function () {
         //clears input fields
         employeeName.value = "";
         employeeSalary.value = "";
+        addSalary.disabled = true;
     }
 });
 function salaryDisplay() {
@@ -57,8 +58,14 @@ function salaryDisplay() {
     }
 }
 displaySalary.addEventListener("click", function () {
-    salaryDisplay();
-    displaySalary.disabled = true;
+    if (people.length === 0) {
+        alert("Please add a salary first");
+    }
+    else {
+        salaryDisplay();
+        displaySalary.disabled = true;
+        addSalary.disabled = false;
+    }
 });
 
 function avgDisplay() {
