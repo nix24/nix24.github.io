@@ -51,7 +51,9 @@ function salaryDisplay() {
         cell1.innerHTML = people[i];
         cell2.innerHTML = salaries[i];
         //delete every row before the prev one
-        employeeTable.deleteRow(i + 1);
+        if (i > 0) {
+            employeeTable.deleteRow(i - 1);
+        }
     }
 }
 displaySalary.addEventListener("click", function () {
@@ -59,29 +61,30 @@ displaySalary.addEventListener("click", function () {
     displaySalary.disabled = true;
 });
 
+function avgDisplay() {
+    let sum = 0;
+    for (let i = 0; i < salaries.length; i++) {
+        sum += parseInt(salaries[i]);
+    }
+    avg = sum / salaries.length;
+    avgSalary.innerHTML = "Average Salary: $" + avg.toFixed(2);
+}
+function highestDisplay() {
+    let highest = 0;
+    //displays highest salary
+    for (let i = 0; i < salaries.length; i++) {
+        if (salaries[i] > highest) {
+            highest = salaries[i];
+        }
+    }
+    highestSalary.innerHTML = "Highest Salary: $" + highest + " (" + people[salaries.indexOf(highest)] + ")";
+}
 //clicking display results will display the average salary and the highest salary
 displayResults.addEventListener("click", function () {
    //if there is no data in the array, alert user
     if (people.length === 0) alert("Please add data to table");
     else {
-        // average salary from the table
-        let sum = 0;
-        for (let i = 0; i < salaries.length; i++) {
-            sum += parseInt(salaries[i]);
-        }
-        let avg = sum / salaries.length;
-        //auto add , using regex https://stackoverflow.com/questions/2254185/regular-expression-for-formatting-numbers-in-javascript
-        avgSalary.innerHTML = "Average Salary: $" + avg.toFixed(2);
-
-        // employee with highest salary, then display the employees name along with their salary
-        let highest = 0;
-        let name = "";
-        for (let i = 0; i < salaries.length; i++) {
-            if (salaries[i] > highest) {
-                highest = salaries[i];
-                name = people[i];
-            }
-        }
-        highestSalary.innerHTML = "Highest Salary: $" + highest + " from " + name;
+        avgDisplay();
+        highestDisplay();
     }
 });
