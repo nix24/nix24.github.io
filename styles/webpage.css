@@ -1,39 +1,35 @@
 html {
-    background-color: #f1ebe4;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    height: 100%;
-    color: #6b0f28;
+  scroll-behavior: smooth;
+  
 }
-header {
-  background-color: #6b0f28;
-  overflow: hidden;
+.jay-nav {
+  /*purple navbar,*/
+  background-color: #818bc5;
+  /*when user scrolls down, navbar will stay visible*/
+  position: fixed;
   top: 0;
   width: 100%;
-  color: #f1ebe4;
+  z-index: 1;
+}
+
+
+.subject-heading {
+  font-size: 2em;
+  font-weight: bold;
   text-align: center;
-  border-style: groove;
-  border-width: 5px;
-  border-radius: 10px;
 }
 
-main {
-    position: relative;
-    min-height: 100vh;
-}
-main a {
-    text-decoration: none;
-    color: #A7988B;
-}
-
-footer {
-    position: relative;
-    min-height: auto;
-    background-color: #6b0f28;
-    color: #f1ebe4;
-    text-align: center;
-    border-style: groove;
-    border-width: 5px;
-    border-radius: 10px;
+.project-cards {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 200px;
+  margin-top: -150px;
+ 
 }
 
+.card-img {
+  width: 40%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
