@@ -1,0 +1,308 @@
+nav {
+  width: 100%;
+  height: 50px;
+  /*orange purple gradient*/
+  background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  color: aliceblue;
+}
+
+.navbar .navbar-collapse {
+  float: none;
+  text-align: center;
+  color: aliceblue;
+}
+
+.item {
+  margin-right: 20px;
+  font-size: 20px;
+  color: aliceblue;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px;
+}
+.item:hover {
+  /*nice infinite color change*/
+  animation: change-color 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  padding-top: 3px;
+  /*add a nice border*/
+  border: #fcd1ed 1px solid;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+@keyframes change-color {
+  0% {
+    color: rgb(245, 248, 202);
+  }
+  50% {
+    color: rgb(247, 213, 253);
+  }
+  75% {
+    color: rgb(201, 230, 255);
+  }
+  100% {
+    color: rgb(245, 248, 202);
+  }
+}
+
+/*-------------------*/
+.footer {
+  color: aliceblue;
+  background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+}
+.footer a {
+  color: aliceblue;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+  text-decoration: none;
+}
+.footer a:hover {
+  /*add animation where element jiggles*/
+  animation: change-color 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  padding: 20px;
+  transition: all 0.5s;
+}
+@keyframes change-color {
+  0% {
+    color: rgb(245, 248, 202);
+  }
+  50% {
+    color: rgb(247, 213, 253);
+  }
+  75% {
+    color: rgb(201, 230, 255);
+  }
+  100% {
+    color: rgb(245, 248, 202);
+  }
+}
+.footer-container {
+  /*make footer responsive*/
+  display: flex;
+  /*wrap content*/
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hero {
+  /*fullsccreen*/
+  width: 100%;
+  height: 100vh;
+  /*background image*/
+}
+
+/*to only make bg darker we use : : before*/
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Starry_night.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  z-index: -1;
+  /*close gap from footer*/
+}
+.hero-content {
+  /*tezt center with button in middle*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: 10px;
+  padding-top: 250px;
+
+}
+.hero-button {
+  /*make button bigger*/
+  padding: 10%x;
+  font-size: 20px;
+  border-radius: 10px;
+  border: rgb(236, 189, 218) 2px solid;
+  background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+  transition: all 0.3s;
+  padding: 5px;
+}
+.hero-button a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.hero-button:hover {
+  /*animation tha changes button shape
+    and color*/
+  animation: change-shape-and-color 0.8s;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+  transition: all 0.3s;
+}
+@keyframes change-shape-and-color {
+  0% {
+    /*button will turn into a circle*/
+    border-radius: 10px;
+    /*change color*/
+    background: linear-gradient(to right, #f88c56 0%, #cf1f95 100%);
+  }
+  25% {
+    /*button will turn into a square*/
+    border-radius: 25px;
+    /*change color*/
+    background: linear-gradient(to right, #df7947 0%, #bd1a86 100%);
+  }
+  50% {
+    /*button will turn into a oval*/
+    border-radius: 50px;
+    /*change color*/
+    background: linear-gradient(to right, #e07742 0%, #c71b8e 100%);
+  }
+  75% {
+    /*button will turn into a square*/
+    border-radius: 25px;
+    /*change color*/
+    background: linear-gradient(to right, #e98655 0%, #c2238d 100%);
+  }
+  100% {
+    /*button will turn into a circle*/
+    border-radius: 10px;
+    /*change color*/
+    background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+  }
+}
+
+.gallery {
+    /*gallery heavily utilizes flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img {
+    /*make images responsive*/
+    border-radius: 10px;
+}
+.gallery img:hover {
+    /*add animation where element gets bigger*/
+    
+    animation: grow 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: all 0.3s;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gallery-row {
+    /*gallery row*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.gallery-column {
+    /*gallery column*/
+    flex: 25%;
+    padding: 5px;
+}
+ .button {
+  
+    border-radius: 10px;
+    border: #fcd1ed 1px solid;
+    background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+    padding: 10px;
+}
+.dark-bg {
+    /*dark background*/
+    background: linear-gradient(to right, #291308 0%, #360225 100%);
+}
+
+.card {
+  background: linear-gradient(to right, #ff9966 0%, #cc2996 100%);
+  border-radius:20px;
+  border:rgb(236, 189, 218) 5px solid;
+  box-shadow: #f0c0a8 0px 0px 20px;
+  /*make card smaller on top and bottom*/
+  margin: 10 auto;
+  width: 30%;
+  text-align: center;
+}
+.card-img-container img {
+  /*small icon in top*/
+  border-radius: 50%;
+}
+
+.youtuber-card-row {
+  /*row for card*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*add space between each card*/
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.contact {
+  color: aliceblue;
+  font-size: 25px;
+  /*looks like a form*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: rgb(236, 189, 218) 2px dotted;
+  border-radius: 10px;
+  background: #0f144e;
+  box-shadow: #f0c0a8 0px 0px 10px;
+  /*center div*/
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 50px;
+}
+.social {
+  
+}
+
+.social i {
+  color: #fcd1ed;
+}
+.social i:hover {
+  animation: enlarge 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transition: all 0.3s;
+  color: #f0e4a2;
+  transition: all 0.3s;
+}
+@keyframes enlarge {
+  0% {
+      transform: scale(1);
+  }
+  20% {
+      transform: scale(1.1);
+  }
+  50% {
+      transform: scale(1.3);
+  }
+  75% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}

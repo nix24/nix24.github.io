@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art-gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 dark-bg">
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <!--gallery page will heavyily utilze flex grid and bootstrap to display many images-->
+        <section class="gallery container-fluid">
+            <div class="row gallery-row">
+                <!--Gallery imgs can be clicked on. clicking on the img will display the img in a new tab-->
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/kirbysleep.jpg">
+                            <img src="images/kirbysleep.jpg" alt="image1" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/Marz_vs_kirby.jpg">
+                            <img src="images/Marz_vs_kirby.jpg" alt="image2" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/Ocean.jpg">
+                            <img src="images/Ocean.jpg" alt="image3" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-row">
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/Emma.jpg">
+                            <img src="images/Emma.jpg" alt="image4" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/Noodle.jpg">
+                            <img src="images/Noodle.jpg" alt="image5" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/scientist.jpg">
+                            <img src="images/scientist.jpg" alt="image6" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-row">
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/skykid.jpg">
+                            <img src="images/skykid.jpg" alt="image7" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/Starry_night.jpg">
+                            <img src="images/Starry_night.jpg" alt="image8" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/water.jpg">
+                            <img src="images/water.jpg" alt="image9" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-row">
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/46845764.jpg">
+                            <img src="images/46845764.jpg" alt="image10" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-column">
+                    <div class="button">
+                        <a href="images/sky.jpg">
+                            <img src="images/sky.jpg" alt="image11" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="gallery-footer" data-include="components/footer.html"></div>
+    <script src="htmlinclude.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
