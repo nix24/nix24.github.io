@@ -388,5 +388,49 @@ a:hover {
 #array-table {
   margin: auto;
   width: 50%;
-  
+}
+
+.carousel-container{
+  width: 50%;
+  margin: auto;
+  border: #2e0606 dotted 2px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #3d0312;
+}
+.slide-active {
+  background-color: #f8cc9b;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-active img {
+  width: 580px;
+  height: 480px;
+}
+.slide-hidden {
+  /*img is hidden*/
+  display: none;
+}
+
+.slide-button {
+  /*buttons are small circles*/
+  border-radius: 20px;
+}
+.slide-button:hover {
+  background-color: #831d1d;
+  border:#ffcc99 1px solid;
+  color: #fab875;
+  transition: 0.3s;
 }
