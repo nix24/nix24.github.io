@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Jaylon Carrington | ITIS 3135 | Jazzamoon Cats Introduction</title>
+  <title>J.C First JS</title>
+  <script src="https://kit.fontawesome.com/d881098363.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link href="styles/default.css" type="text/css" rel="stylesheet" />
@@ -35,21 +36,68 @@
       <button class="fs-button" id="button4">Button 4</button>
       <button class="fs-button" id="button5">Button 5</button>
     </div>
-    <h3 id="buttonDisplay"></h3>
-    <h3 id="rps"></h3>
-    <h3 id="timer"></h3>
-    <div class="reaction-game">
-      <button class="reaction-button" id="reaction1"></button>
-      <button class="reaction-button" id="reaction2"></button>
-      <button class="reaction-button" id="reaction3"></button>
+
+
+    <div class="rock-paper-scissors js-hide">
+      <h2>Rock Paper Scissors</h2>
+      <div class="rps-buttons">
+        <button class="rps-button" id="rock">Rock</button>
+        <button class="rps-button" id="paper">Paper</button>
+        <button class="rps-button" id="scissors">Scissors</button>
+      </div>
+      <div class="rps-result">
+        <h3 id="rps-result"></h3>
+      </div>
     </div>
-    <h3 style="margin: auto; text-align: center;">Thank you for viewing our silly little games haha</h3>
+
+
+    <div class="reaction-game js-hide">
+      <h2 class="rg-text"></h2>
+      <h2 class="rg-result"></h2>
+      <button class="reaction-button red"></button>      
+    </div>
+
+    <div class="number-guessing js-hide">
+      <!-- number guessing game has text that tells you if too high and a number textbox to put your answer. cancel button at the end-->
+      <h2 class="guess-text">Guess a number between 1-50</h2>
+      <input type="number" id="guess-input" placeholder="Enter your guess" />
+      <button id="guess-button">Guess</button>
+    </div>
+
+    <div class="add-instrument js-hide">
+      <h2 class="js-text" id="add-text">Add an intrument</h2>
+      <input type="text" class="js-input" id="add-input" placeholder="Enter intrument" />
+      <button id="add-button">Add</button>
+      <button id="add-cancel-button">Cancel</button>
+    </div>
+
+    <div class="view-instruments js-hide">
+      <h2 class="js-text" id="view-text">View intruments</h2>
+      <button id="view-button">View</button>
+      <button id="view-cancel-button">Cancel</button>
+      <!--table that displays instrument-->
+      <table class="js-table">
+        <thead>
+          <tr>
+            <th>Instrument</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="instrument row">
+            <td id="instrument-name"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 id="js-end" class="js-hide">Thank you for viewing our silly little games haha</h3>
   </main>
   <div data-include="components/footer.html"></div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="scripts/defaultscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
   <script src="scripts/htmlinclude.js"></script>
 </body>
 

@@ -284,6 +284,21 @@ footer a {
   /*center*/
   margin: auto;
 }
+.js-hide {
+  display: none;
+}
+.rock-paper-scissors {
+  text-align: center;
+  margin-top: 10px;
+}
+.green {
+  background-color: #0c6614;
+  border: #ffcc99 solid 1px;
+}
+.red {
+  background-color: #d82561;
+  border: #ffcc99 solid 1px;
+}
 .calc-container {
   margin: auto;
   width: fit-content;
