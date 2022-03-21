@@ -306,14 +306,11 @@ $(document).ready(function () {
         //take the intruments array and display it in the table
         $("#view-button").click(function () {
             //mdisplay intruments in table
-            //add each instrument in a new line with \n
-            let intrumentsString = "";
-            for (let i = 0; i < instruments.length; i++) {
-                intrumentsString += `${instruments[i]}`;
-                $("#instrument-name").text(intrumentsString);
-            }
+            //add a space between each array item
+            let intrumentsString = instruments.join(",\n");
             //display intruments in table
-            
+            $("#instrument-name").text(intrumentsString);
+
         });
         //if user clicks cancel, hide the view intruments div
         $("#view-cancel-button").click(function () {

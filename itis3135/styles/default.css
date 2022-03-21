@@ -246,7 +246,67 @@ footer a {
   color: #ffcc99;
   transition: 0.3s;
 }
-
+.filescript h2 {
+  text-align: center;
+}
+/*<div class="number-guessing js-hide">
+      <!-- number guessing game has text that tells you if too high and a number textbox to put your answer. cancel button at the end-->
+      <h2 class="guess-text">Guess a number between 1-50</h2>
+      <input type="number" id="guess-input" placeholder="Enter your guess" />
+      <button id="guess-button">Guess</button>
+    </div>*/
+  #guess-input {
+    width: 100px;
+    /*move to center of screen*/
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 30rem;
+    border: #2e0606 solid 1px;
+  }
+  .number-guessing button {
+    background-color: #5c0b21;
+    color: #fde5cc;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+  }
+  .add-instrument {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #2e0606 solid 1px;
+  }
+  .add-instrument button{
+    background-color: #5c0b21;
+    color: #fde5cc;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+  }
+  .view-instruments {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #2e0606 solid 1px;
+  }
+  .view-instruments button{
+    background-color: #5c0b21;
+    color: #fde5cc;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+  }
+  .view-instruments table {
+    /* center */
+    margin: 0 auto;
+    
+  }
 .filescript-buttons {
   display: flex;
   flex-direction: row;

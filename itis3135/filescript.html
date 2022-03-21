@@ -15,7 +15,7 @@
 
   <main class="filescript">
     <!--page Displays the time, day of week, and date (i.e. Today is 3:53pm on Wednesday, 3 November, 2027) as an h3 under the page name in the main element -->
-    <h3 style="text-align: center" id="currentDate"></h3>
+    <h3 id="currentDate"></h3>
     <!--user will enter their name and how they are feeling into a text field.(ONLY html)-->
     <div class="filescript-form">
       <label for="name">Hey stranger what's your name?:</label>
@@ -25,9 +25,9 @@
       <button id="submit">submit</button>
     </div>
 
-    <h4 style="text-align: center" id="display"></h4>
+    <h4 id="display"></h4>
 
-    <h2 style="text-align: center">Button mini-games!</h2>
+    <h2>Button mini-games!</h2>
     <!--a flex grid style div full of five butons.-->
     <div class="filescript-buttons">
       <button class="fs-button" id="button1">Button 1</button>
@@ -64,7 +64,7 @@
       <button id="guess-button">Guess</button>
     </div>
 
-    <div class="add-instrument js-hide">
+    <div class="add-instrument container-fluid js-hide">
       <h2 class="js-text" id="add-text">Add an intrument</h2>
       <input type="text" class="js-input" id="add-input" placeholder="Enter intrument" />
       <button id="add-button">Add</button>
@@ -83,7 +83,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="instrument row">
+          <tr class="container-fluid" id="instrument row">
             <td id="instrument-name"></td>
           </tr>
         </tbody>
