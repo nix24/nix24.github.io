@@ -23,7 +23,6 @@ p {
 	padding-bottom: .5em;
 }
 footer {
-	/*only holds two links, make look nice*/
 	display:flex;
 	justify-content: space-between;
 	padding-top: 1rem;
