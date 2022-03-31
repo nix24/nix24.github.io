@@ -22,7 +22,7 @@ $(document).ready(function () {
                         $("#caption").animate({
                                 fontSize: "2.0em"
                         }, 3000);
-                });;
+                });
                 $("#image_list li a img").removeClass("active");
                 $(this).addClass("active");
         });
