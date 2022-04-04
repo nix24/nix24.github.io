@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music hobby page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--single page application 
+    :Home/intro
+    :about
+    :genres
+    :links
+    :get-started-->
+  <header class="navbar">
+    <div class="container">
+      <!--5 links no burger icon-->
+      <a href="#home" class="nav-item"><i class="fa fas fa-house-user"></i>home</a>
+      <a href="#about" class="nav-item"> <i class="fa fas fa-question"></i>about</a>
+      <button class="jazz-button"><img src="images\jazzamoonMusic.png" alt="jazzamoonMusic" class="logo"></button>
+      <a href="#genre" class="nav-item"><i class="fa fas fa-music"></i>genres</a>
+      <a href="#links" class="nav-item"><i class="fa fas fa-at"></i>links</a>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid" id="home">
+      <!--hero page. has background img  with white text in middle-->
+      <h2>This is a page all about music</h2>
+      <i class="fa fas fa-compact-disc fa-spin center"></i>
+      <p>
+        Here to show you my love for music and the genres I presonally reccomend.
+      </p>
+    </div>
+    <div class="container-fluid" id="about">
+      <!--about page. has background img  with white text in middle-->
+      <h2>About</h2>
+      <h4>What is Music? <i class="fa fas fa-guitar"></i></h4>
+      <p>
+        You may already know how Music means something different to many people.
+      </p>
+      <!--an image with border with figcaption-->
+
+      <figure class="figure-img">
+        <img src="images\music-relax.jpg" alt="jazzamoonMusic" class="img-fluid">
+      </figure>
+      <figcaption class="figure-caption" id="about-1">
+        Music a form that can be listened to any time of the day. From needing a a relaxing break from the hard day.
+      </figcaption>
+      <figure class="figure" id="about-2">
+        <img src="images\music-create.jpg" alt="jazzamoonMusic" class="img-fluid">
+      </figure>
+      <figcaption class="figure-caption">
+        Music is a form of art and a medium of expression. It is a way of expressing ideas, feelings, and emotions.
+        It is a way of expressing the ideas of the people who create it.
+      </figcaption>
+      <figure class="figure" id="about-3">
+        <img src="images\music-work.jpg" alt="jazzamoonMusic" class="img-fluid">
+      </figure>
+      <figcaption class="figure-caption">
+        It can also be a strong energizer to make the final push through a day of hard work!
+      </figcaption>
+      <p>In the end. We can all agree that it's apart of our daily lives. It's amazing how there are thousands or
+        <strong>Millions</strong> of scenarios that you can make a song for. That's why I'm here to hopefully show you
+        some of my favorites
+      </p>
+      <i class="fa center fas fa-headphones fa-beat"></i>
+    </div>
+    <div class="container-fluid" id="genre">
+      <!--genre pae. Display title and 3 genres Rock, future bass, and modern clsasical-->
+      <h2>Genres</h2>
+      <h4>some of my favorite genres I reccomend</h4>
+      <h5>Don;t be surprised if mostly game music</h5>
+      <!--3 imgs with text. Layout with css grid in mind -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images\metal.jpg" alt="jazzamoonMusic" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h4>Progressive Metal</h4>
+          <p>
+            Yeah. We're going to get a bit niche with these picks but that's the fun it all. Progressive rock started
+            aroung the late 60s in North America.
+            It aimed to be a remix/blend of two opposite groups to create a sound never heard before. When you combine
+            the aggreive power of a amped Guitar with the melody-oriented, smooth sounding composition of
+            synths/classical instruments
+            You get a nice balance that bursts you with energy. It's a perfect mashup that feels like a narrative being
+            told, It is heavily popular in musical scores for games and movies alike.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="images\future.jpg" alt="jazzamoonMusic" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h4>Future Bass</h4>
+          <p>
+            Future Bass is a fairly recent genre originating in the 2010s from countries like Uk, australis, USA, and
+            japan. It encompasses all of the bass of electronic and dubstep with a warmer, more melodic rhythm. (Are you
+            sensing a pattern here?)
+            after recent years, future bass has taken the world by storm creating 10s to 100s of sub genres that each
+            takes it's own spin on electronic. If you want to join the never ending sea music euphoria, this is your
+            pick.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="images\classical.jpg" alt="jazzamoonMusic" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h4>Modern Classical</h4>
+          <p>
+            Modern Classical is a more specific pick solely on the fact that it's not as widely used as the other two.
+            That being said, insead of making a huge twist or remix, Modern clssical aims to perfect the art of
+            harmonies and melodies alike, combining past piano eras.
+            It's powerful enough to put in a trance like all of your worries have gone away. Modern classical originates
+            from the 1900s in Western-Europe. It's evolved so many times, in the present day, that two pieces of the
+            genre could sound completely different. Present day classical has started in incorporate faster tempos and
+            more complex rhythms. The future looks brright for this genre as a whole.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="conatiner-fluid" id="links">
+      <!--links page. Shows off genre with youtube emb-->
+      <h2>Links</h2>
+      <h4>links to songs i personally love</h4>
+      <div class="grid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7N0ulS1AxA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/250rS-RvwlU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBIIqQ7iddY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jlxMRSum3fo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dkYHgxfQZBA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ROKVJyeglhU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container-fluid" id="get-started"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d881098363.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

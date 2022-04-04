@@ -1,0 +1,143 @@
+* {
+  color: azure;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+
+}
+.navbar {
+  /*nav moves down with the page*/
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+}
+.nav-item {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 7px;
+  font-size: 20px;
+}
+.nav-item:hover {
+  color: rgb(252, 244, 142);
+}
+.logo {
+  padding: 10px;
+  width: 150px;
+  border: 1px solid aliceblue;
+  border-radius: 15px;
+}
+.logo:hover {
+  background-color: aliceblue;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  
+}
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
+p {
+  font-weight: 400;
+  font-size: 25px;
+  /*playful font*/
+}
+.figure-caption {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(252, 244, 142);
+  
+}
+
+
+#home {
+  background-color: #D65DB1;
+  margin-bottom: -16px;
+  overflow: hidden;
+  text-align: center;
+}
+#home i {
+  font-size: 100px;
+  padding: 10px;
+  color: #FBEAFF;
+}
+.center {
+  text-align: center;
+  width: 100%;
+}
+#about {
+  background-color: #FF6F91;
+  overflow: hidden;
+  align-items: center;
+  /* center all items */
+  text-align: center;
+  padding: 20px;
+}
+#about .figure-caption {
+ margin-bottom: 20px;
+ /*wrap text*/
+ overflow-wrap: break-word;
+ padding-left: 200px;
+  padding-right: 200px;
+}
+
+#about .fa-headphones {
+  font-size: 40px;
+  padding: 50px;
+  color: #FBEAFF;
+
+}
+#genre {
+  background-color: #FF9671;
+  justify-content: center;
+  align-items: center;
+}
+#genre h5 {
+  text-align: center;
+}
+#links {
+  background-color: #FFC75F;
+}
+#get-started {
+  background-color: #F9F871;
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  /* 2 per lcolumn */
+  grid-template-columns: repeat(2, 1fr);
+  /*spacing between items*/
+  grid-gap: 20px;
+}
+#genre img {
+  border-radius: 50px;
+  /*center*/
+  padding-left: 160px;
+}
