@@ -128,7 +128,7 @@ nav {
 }
 .hero-button {
   /*make button bigger*/
-  padding: 10%x;
+  padding: 10px;
   font-size: 20px;
   border-radius: 10px;
   border: rgb(236, 189, 218) 2px solid;
@@ -305,4 +305,9 @@ nav {
   100% {
       transform: scale(1);
   }
+}
+
+#jaylon {
+  border-radius: 50%;
+  width: 120px;
 }

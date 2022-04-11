@@ -15,3 +15,10 @@ $(document).ready(function () {
         pagerShortSeparator: '/',
     }); 
 });
+
+//What do the following options do?
+$("#datepicker").datepicker({
+    minDate: new Date(),
+    maxDate: +45
+});
+//this code will set the minimum date to today and the maximum date to 45 days from today.
