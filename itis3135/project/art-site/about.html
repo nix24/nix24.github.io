@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/swup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
 </head>
 
 <body class="d-flex flex-column min-vh-100 dark-bg">
@@ -16,22 +21,50 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <section class="about container-fluid" style="color: aliceblue;">
-            <h1>Who am I?</h1>
+        <div class="about container-fluid" style="color: aliceblue;">
             <div class="profile-icon">
+                <!--make img bigger-->
                 <img src="images/jaylon.jpg" alt="profile" class="img-fluid" id="jaylon">
             </div>
-            <p>Hey there. My name is Jaylon Carrington.</p>
-            <p>I created this website as a way to test myself in working with css as well as showcasing my favorite pieces over the years.</p>
-            <p>I have always been someone that always dreamed of creating designs that make people want o just look in awe or feel a sense of wonder. There is so much to say that words cannot express them all. That's why I decided to utilize the power of art.</p>
+            <div id="accordion">
+                <h3>Who am I?</h3>
+                <div>
+                    <p>
+                        Hey there. My name is Jaylon Carrington! I'm a 19 year old student that wanted to show my
+                        passion of Art through my skills as a front-end developer. I have always been someone that
+                        always dreamed of creating designs that make people want to just look in awe or feel a sense of
+                        wonder. There is so much to say that words cannot express them all. That's why I decided to
+                        utilize the power of art.
+                    </p>
+                </div>
+                <h3>What content to expect</h3>
+                <div>
+                    <p>
+                        As of now, My art is mostly on a digital medium. I specialize in creating a sense of scale of
+                        tiny characters facing off against gigantic monsters. My style tends to utilize this to give a
+                        unique feeling seeing something cute against something so grotesque.
+                    </p>
+                </div>
+                <h3>My future plans</h3>
+                <div>
+                    <p>
+                        I will continue to update this gallery with all of my pieces I have done over the years. I will
+                        also use this as a practice experience to further evolve my artitic skills along with my ability
+                        as a programmer. For now, I hope you enjoy my work and don't be afraid to reach out to me
+                        regarding art or programming!
+                    </p>
+                   
+                </div>
+            </div>
 
-        </section>
+        </div>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="htmlinclude.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="scripts/about.js"></script>
 </body>
 
 </html>
