@@ -93,22 +93,16 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.hero {
-  /*fullsccreen*/
-  width: 100%;
-  height: 100vh;
-  /*background image*/
-}
 
 .hero {
-  width: 100%;
   background: url("../images/Starry_night.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /*add a nice dim effect*/
   filter: brightness(0.8);
-  z-index: -1;
+  width: 100%;
+  height: 100vh;
 }
 .hero-content {
   /*tezt center with button in middle*/
@@ -224,17 +218,14 @@ nav {
   box-shadow: #f0c0a8 0px 0px 10px;
   /*center div*/
   margin: 0 auto;
-  width: 50%;
   margin-top: 50px;
 }
-.social {
-  
-}
 
-.social i {
+.social a i {
   color: #fcd1ed;
+  z-index: 50;
 }
-.social i:hover {
+.social a i:hover {
   animation: enlarge 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
